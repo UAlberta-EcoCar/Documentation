@@ -1,5 +1,5 @@
 ---
-title: Git Submodules
+title: Using Git Submodules
 parent: Using Github
-nav_order: 1 
+nav_order: 3 
 ---
