@@ -4,7 +4,7 @@ parent: Using Github
 nav_order: 2 
 ---
 
-To use git, you will need to know how to clone a repository, pull changes from a remote repository to your local repository, and push changes from your local repository to a remote repository.
+To use git, you will need to know how to clone a repository, pull changes from a remote repository to your local repository, push changes from your local repository to a remote repository, and how to change branches.
 
 Besides `git clone`, all other git commands should be executed in the root directory of a repository.
 
@@ -36,7 +36,7 @@ After cloning a repository, execute the following command:
 git submodule update --init --recursive
 ```
 
-Alternatively, if you have not cloned the repository yet, add the `--recursive` flag to your `git clone` command to automatically clone the git submodules too.
+Alternatively, if you have not cloned the repository yet, add the `--recursive` flag to your `git clone` command to automatically clone any git submodules too.
 ```sh
 git clone --recursive <The GitHub Repository HTTPS Link>
 ```
@@ -94,3 +94,27 @@ Once you have made your changes it is time to push those changes to the remote r
     ```sh
     git push
     ```
+
+# Git Branches
+
+## Changing Branches
+
+Before switching branches, make sure to commit or stash the changes you made. To change branches use
+
+```sh
+git checkout <branch name>
+```
+
+If git cannot find the branch, then you may need to pull changes from the remote repository. 
+
+```sh
+git fetch origin
+```
+
+## Creating a New Branch
+
+To create a new Git branch, run the command
+
+```sh
+git checkout -b <new branch name>
+```
