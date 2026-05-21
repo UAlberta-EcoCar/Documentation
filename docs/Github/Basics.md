@@ -105,7 +105,7 @@ Before switching branches, make sure to commit or stash the changes you made. To
 git checkout <branch name>
 ```
 
-If git cannot find the branch, then you may need to pull changes from the remote repository. 
+If git cannot find the branch, then you may need to pull new branches from the remote repository. 
 
 ```sh
 git fetch origin
