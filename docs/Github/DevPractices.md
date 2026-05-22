@@ -29,10 +29,10 @@ a single PCB. It is good practice for the README files of those branchs to inclu
 * How to contribute
   * What programs to install, third part dependencies, etc.
   * Any code formatters used.
-  * If a git submodule is used, then record the last working commit of the git repository used. 
+  * If a git submodule is used, then it is a good idea to record the last working commit of the git submodule used. 
 
     If in the future, the git submodule is updated with a change that breaks functionality, you can immediately checkout the last working commit of the submodule.
-    An example of doing this is in the FOC-Board's [repository](https://github.com/UAlberta-EcoCar/Sally-Electrical-Design/tree/FOC-Board#branch-for-the-original-foc-board)
+    An example of recording this is in the FOC-Board's [repository](https://github.com/UAlberta-EcoCar/Sally-Electrical-Design/tree/FOC-Board#branch-for-the-original-foc-board)
 * Authors
 
 # The .gitignore File
@@ -53,11 +53,40 @@ There are 2 `.gitignore` templates that you will likely use:
 1. For STM32 projects, there is a STM32 [.gitignore file](https://github.com/github/gitignore/blob/main/Global/STM32CubeIDE.gitignore)
   that should be copied into the root of your STM32 project.
 
-# Git Versioning
+# Versioning 
 
+The industry wide standard to version software is to follow [Semantic Versioning](https://semver.org/) rules[^3].
+Versioning is useful if you want to record a snapshot of your project for future reference.
+Usually this will be done after your board and firmware are developed and eveything is working.
+That way you can always access the last working version of your work.
+
+In git, the way to create a new version is to create a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+Git tags are like branches, except they are immutable. You cannot make changes to a tag.
+
+Because the branches in a car's repository are each dedicated to a PCB, the name of the PCB should be part of the tag's name.
+Here's a typical process for creating a tag in a car's repository.
+
+```sh
+# Create a new tag
+git tag <Name of PCB>-<version>
+# Push that tag to the remote repository
+git push --tags
+```
+
+Example: Create version 1.0.0 of the [FOC-Board](https://github.com/UAlberta-EcoCar/Sally-Electrical-Design/tree/FOC-Board)
+```sh
+git tag FOC-Board-v1.0.0
+git push --tags
+```
+
+# Troubleshooting Git
+
+[Oh Shit, Git!?!](https://ohshitgit.com/)
 
 ----
 
 [^1]: [GitHub README Documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
 
 [^2]: [.gitignore Documentation](https://git-scm.com/docs/gitignore)
+
+[^3]: [Semantic Versioning](https://semver.org/)

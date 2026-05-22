@@ -10,7 +10,7 @@ Before installing Git, you should first create a Github account. See [Creating a
 
 There are a few ways to setup Git on a computer[^1]. 
 Theres [GitHub CLI](https://docs.github.com/en/github-cli/github-cli/about-github-cli), [GitHub Desktop](https://github.com/apps/desktop), and the [git CLI](https://git-scm.com/install/windows). 
-The git CLI is the most versatile, so I recommend installing that. 
+The git CLI is the most popular to use, so I recommend installing that. 
 
 1. Folow the instructions for [installing git](https://git-scm.com/install/) on your operating system.
 
@@ -21,7 +21,7 @@ The git CLI is the most versatile, so I recommend installing that.
 
 1. Follow the instructions in [Setting your email address for every repository on your computer](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer)
 
-You should now be able to use git on your computer.
+You should now be able to use git with GitHub on your computer.
 
 ----
 
