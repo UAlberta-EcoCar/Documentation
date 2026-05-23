@@ -13,13 +13,12 @@ nav_order: 5
 # The ReadMe File
 
 Taken from the GitHub docs[^1], 
-a README is often the first item a visitor will see when visiting your repository. README files typically include information on:
+a README is often the first item a visitor will see when visiting your repository.
+You can find this repository's README [here](https://github.com/UAlberta-EcoCar/Documentation/blob/main/README.md).
 
-* What the project does
-* Why the project is useful
-* How users can get started with the project
-* Where users can get help with your project
-* Who maintains and contributes to the project
+README's are written in Markdown, a simple markup language
+to write formatted text. See Markdown [basic syntax](https://www.markdownguide.org/basic-syntax/) to learn more.
+Some text editors like VSCode have the ability to preview Markdown.
 
 All branches in a car's repository (ex: [Sally](https://github.com/UAlberta-EcoCar/Sally-Electrical-Design)) 
 should already contain a `README.md` file. In Sally's repository, each branch will contain the PCB and firmware files for 
@@ -61,7 +60,7 @@ Usually this will be done after your board and firmware are developed and eveyth
 That way you can always access the last working version of your work.
 
 In git, the way to create a new version is to create a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
-Git tags are like branches, except they are immutable. You cannot make changes to a tag.
+Git tags are like branches, except they are immutable. You can create or delete a tag, but cannot add changes to a tag.
 
 Because the branches in a car's repository are each dedicated to a PCB, the name of the PCB should be part of the tag's name.
 Here's a typical process for creating a tag in a car's repository.
@@ -73,7 +72,7 @@ git tag <Name of PCB>-<version>
 git push --tags
 ```
 
-Example: Create version 1.0.0 of the [FOC-Board](https://github.com/UAlberta-EcoCar/Sally-Electrical-Design/tree/FOC-Board)
+Example: Publish version 1.0.0 of the [FOC-Board](https://github.com/UAlberta-EcoCar/Sally-Electrical-Design/tree/FOC-Board)
 ```sh
 git tag FOC-Board-v1.0.0
 git push --tags
