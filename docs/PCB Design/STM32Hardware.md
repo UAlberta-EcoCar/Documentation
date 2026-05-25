@@ -11,7 +11,7 @@ EcoCar PCBs use STM32 Microcontrollers.
 I recommend starting with a STM32L432KC. 
 If you took ECE-212, then you would have been given a NUCLEO-L432KC or similar.
 A NUCLEO-L432KC is a development board with a STM32L432KC MCU. 
-Which means you will be able to prototype your PCB using your development board.
+Which means you will be able to prototype your PCB using your NUCLEO-L432KC.
 
 If a STM32L432KC does not meet your design requirements, then you 
 will need to pick a different MCU. 

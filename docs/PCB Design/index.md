@@ -23,3 +23,10 @@ After the tutorial, Davy Jones's [PCB Design Tutorial](https://www.scs.stanford.
 serves as a good introduction to general PCB concepts. Some of the information is outdated because of how old it is.
 
 To dive deeper follow along with Phil on his [channel](https://www.youtube.com/@PhilsLab). Try to recreate his boards.
+
+# Install EcoCad-Lib
+
+[EcoCad-Lib](https://github.com/UAlberta-EcoCar/EcoCad-Lib) is a KiCad parts library
+for common electrical components used in EcoCar.
+
+Instructions for installing the EcoCad library are in the repository's [README](https://github.com/UAlberta-EcoCar/EcoCad-Lib#how-to-install-the-libraries---as-of-kicad-8).
