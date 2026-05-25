@@ -7,7 +7,7 @@ nav_order: 2
 EcoCar uses the [CAN protocol](https://www.csselectronics.com/pages/can-bus-simple-intro-tutorial) to communicate between PCBs.
 CAN is a standard communication protocol used in vehicles, offering high speed and reliability.
 A [CAN transceiver](https://www.infineon.com/knowledge-centre/what-is-a-can-transceiver) is required for communication
-between multiple MCUs. At EcoCar we use a [MCP2542FD](https://www.microchip.com/en-us/product/MCP2542FD) for the CAN transceiver.
+between multiple MCUs. Currently we use a [MCP2542FD](https://www.microchip.com/en-us/product/MCP2542FD) for the CAN transceiver.
 
 There are multiple ways to configure CAN on an MCU. 
 Currently we use either CAN 2.0 or CAN FD with a **fixed** baud rate of `1 Mbit/s`.
