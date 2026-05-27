@@ -1,6 +1,6 @@
 # EcoCar Documentation
 
-This repository contains documentation for the EcoCar clube.
+This repository contains documentation for the EcoCar club.
 It is a [Jekyll] site built using the [Just the Docs] theme, 
 and is hosted using GitHub pages here [https://ualberta-ecocar.github.io/Documentation/](https://ualberta-ecocar.github.io/Documentation/)
 
